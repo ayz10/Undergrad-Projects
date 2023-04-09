@@ -226,7 +226,7 @@ public class UniDb {
     }
 
     public static void main(String[] args){
-        String url = args[0];
+        String url = "jdbc:mysql://" + args[0];
         String userid = args[1];
         String passwd = args[2];
 
