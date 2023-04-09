@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project4.StoreOrdersController">
+   <top>
+      <Label text="Store Orders" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Goudy Old Style Bold" size="38.0" />
+         </font>
+      </Label>
+   </top>
+   <right>
+      <VBox prefHeight="336.0" prefWidth="106.0" spacing="30.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="75.0" left="10.0" right="10.0" top="75.0" />
+         </padding>
+         <children>
+            <Button fx:id="cancelOrderButton" mnemonicParsing="false" onAction="#cancelOrder" prefHeight="29.0" prefWidth="98.0" text="Cancel Order" />
+            <Button fx:id="exportButton" mnemonicParsing="false" onAction="#exportToText" prefHeight="25.0" prefWidth="98.0" text="Save+Export" />
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="89.0" text="Error Display" />
+                  <TextArea fx:id="errorMessage" prefHeight="200.0" prefWidth="200.0" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </right>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <center>
+      <ListView fx:id="storeOrdersOutput" prefHeight="200.0" prefWidth="463.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

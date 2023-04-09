@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".basketActivity">
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="83dp" app:srcCompat="@drawable/istockphoto_1206806317_170667a"
+            android:id="@+id/imageView6" android:contentDescription="@string/basket"/>
+    <Button
+            android:text="@string/refresh_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/refreshButton" android:onClick="refresh"/>
+    <ListView
+            android:layout_width="match_parent"
+            android:layout_height="246dp" android:id="@+id/currentOrder"/>
+<TextView
+        android:text="@string/textview"
+        android:layout_width="match_parent"
+        android:layout_height="46dp" android:id="@+id/subtotal"/>
+<TextView
+        android:text="@string/textview"
+        android:layout_width="match_parent"
+        android:layout_height="53dp" android:id="@+id/salesTax"/>
+<TextView
+        android:text="@string/textview"
+        android:layout_width="match_parent"
+        android:layout_height="53dp" android:id="@+id/total"/>
+<Button
+        android:text="@string/place_order"
+        android:layout_width="match_parent"
+        android:layout_height="61dp" android:id="@+id/placeOrderButton" android:onClick="placeOrder"/>
+</LinearLayout>
