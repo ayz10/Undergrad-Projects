@@ -226,6 +226,8 @@ public class UniDb {
     }
 
     public static void main(String[] args){
+        //run command
+        //java -cp C:\Users\alexz\Desktop\cs\336\hw3\src\mysql-connector-j-8.0.32.jar UniDb.java localhost:3306/hw3 root Ayz08192000!
         String url = "jdbc:mysql://" + args[0];
         String userid = args[1];
         String passwd = args[2];
